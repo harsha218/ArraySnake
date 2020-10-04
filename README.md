@@ -2,6 +2,8 @@
 
 This is fun project to recreate the Classic Snake game using 2D arrays implemented in React.js
 
+Check out the app at 'https://arraysnake.web.app/'
+
 ## Available Scripts
 
 In the project directory, you can run:
