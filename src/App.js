@@ -27,7 +27,7 @@ class App extends React.Component {
 
 	componentDidMount() {
 		window.addEventListener('keypress', this.handlekeys);
-		let intervalId = setInterval(this.moveHandler, 400);
+		let intervalId = setInterval(this.moveHandler, this.state.interval);
 		this.setState({ intervalId });
 		this.makeBoard();
 	}
@@ -140,7 +140,7 @@ class App extends React.Component {
 		if (hr >= size || hc >= size || hr < 0 || hc < 0) {
 			console.log('You hit a wall');
 			this.setState({ outcome: 'You hit a wall', gameover: true, scoreModel: true, movement: arrow.SPACE });
-		} else if (board[hr][hc] == 1) {
+		} else if (board[hr][hc] != 0 && board[hr][hc] != '*') {
 			console.log('You hit yourself');
 			this.setState({ outcome: 'You hit yourself', gameover: true, scoreModel: true, movement: arrow.SPACE });
 		} else if (board[hr][hc] == '*') {
