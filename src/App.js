@@ -189,7 +189,7 @@ class App extends React.Component {
 					<Navbar fixed="top" expand="lg" bg="light">
 						<Jumbotron className="jumbo"> Array Snake </Jumbotron>
 						<Sliders className="navButton" onClick={() => this.setState({ sizeModal: true })} />
-						<a href='https://github.com/logos' target='_blank'><img className="navIcon" src={git} alt="github link"/></a>
+						<a href='https://github.com/harsha218/ArraySnake' target='_blank'><img className="navIcon" src={git} alt="github link"/></a>
 					</Navbar>
 				</Container>
 				{this.state.gameover &&

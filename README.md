@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Intro
+
+This is fun project to recreate the Classic Snake game using 2D arrays implemented in React.js
 
 ## Available Scripts
 
